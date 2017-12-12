@@ -16,6 +16,7 @@ void sieve()
                 IsPrime[j] = 1;
         }
     }
+    // sieve ends here
 
     Prime.push_back(2);
     for(int i=3;i<N;i+=2)
