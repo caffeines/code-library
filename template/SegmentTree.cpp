@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 #define N 100001
 int arr[N];
 int tree[N*3];
@@ -49,17 +47,4 @@ int query(int curr,int start,int end,int first,int last)
     int q1 = query(left,start,mid,first,last);
     int q2 = query(right,mid+1,end,first,last);
     return q1+q2;
-
-
-}
-int main()
-{
-    arr[1]=3;arr[2]=2;arr[3]=1;arr[4]=4;arr[5]=5;//input in array
-    init(1,1,5);//tree building here
-
-    cout<<query(1,1,5,1,5)<<endl;//query
-    update(1,1,5,3,1000);//update
-    cout<<query(1,1,5,1,5)<<endl;
-
-    return 0;
 }
