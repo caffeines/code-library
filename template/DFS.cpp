@@ -12,3 +12,9 @@ void dfs(int curr)
         }
     }
 }
+void Clear()
+{
+    for(int i=0;i<N;i++)
+        graph[i].clear();
+    mem(visited);
+}

@@ -23,3 +23,9 @@ void bfs(int start)
         }
     }
 }
+void Clear()
+{
+    for(int i=0;i<N;i++)
+        graph[i].clear();
+    mem(visit);
+}
