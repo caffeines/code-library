@@ -55,7 +55,7 @@ typedef vector<pll> pv;
 typedef vector<ll> vl;
 typedef vector <int> vi;
 const int inf = (int) 10e9;
-const int INF = (ll) 10e18;
+const ll INF = (ll) 10e18;
 const double PI = 2 * acos ( 0.0 );
 
 int dx[] = {+1,-1,0,0};
@@ -64,16 +64,16 @@ int hx[] = {+1,-1,-1,+1,-2,-2,+2,+2};
 int hy[] = {+2,+2,-2,-2,+1,-1,+1,-1};
 int fx[] = {+0,+0,+1,-1,-1,+1,-1,+1};
 int fy[] = {-1,+1,+0,+0,+1,+1,-1,-1};
+int month[] = {31,28,31,30,31,30,31,31,30,31,30,31};
 
 template < typename T> inline T GCD(T a, T b) {a=ABS(a), b=ABS(b); return !b ? a : GCD(b,a%b); }
 template < typename T> inline T LCM(T x, T y) {T g = GCD(x,y); return x*(y/g); }
 template < typename T> inline T power(T b,T p) { T res = 1, x = b; while ( p ) { if ( p & 1 ) res = ( res * x ); x = ( x * x ); p >>= 1;}return res;}
 template < typename T> inline T bigmod (T b, T p, T m) { T res = 1 % m, x = b % m; while ( p ) { if ( p & 1 ) res = ( res * x ) % m; x = ( x * x ) % m; p >>= 1; }return res; }
 
-/*=========================================================
-    stop doubting yourself, work hard and make it happen.
-==========================================================*/
-
+/*====================================================================================================================================================
+                                                        stop doubting yourself, work hard and make it happen.
+======================================================================================================================================================*/
 int main()
 {
     //read("input.txt");
