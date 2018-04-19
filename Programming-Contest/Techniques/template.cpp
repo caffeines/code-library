@@ -10,6 +10,7 @@
 #define ABS(x)                                      ((x)<0?-(x):(x))
 #define FABS(x)                                 ((x)+eps<0?-(x):(x))
 #define F                                                      first
+#define FasterIO ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 #define FOR(i,x,y)                 for(ull i = (x) ; i <= (y) ; ++i)
 #define kase(a,t)                    for(int a = 1 ; a <= (t) ; ++a)
 #define LB(a,key)     lower_bound(a.begin(),a.end(), key) -a.begin()
@@ -23,9 +24,8 @@
 #define NUMDIGIT(x,y)              (((ll)(log10((x))/log10((y))))+1)
 #define ODD(x)                                  (((x)&1)==0?(0):(1))
 #define pb                                                 push_back
-#define pl                                              printf("\n")
-#define pf                                                    printf
-#define pcase(t)                               printf("Case %d: ",t)
+#define pl                                                cout<<endl
+#define pcase(t)                              cout<<"Case "<<t<<": "
 #define phl printf                                     ( "hello\n" )
 #define POPCOUNT                                __builtin_popcountll
 #define ROF(i,x,y)                 for(ull i = (y) ; i >= (x) ; --i)
@@ -34,11 +34,7 @@
 #define S                                                     second
 #define Size                                                    1001
 #define SQ(x)                                              ((x)*(x))
-#define sf(n)                                         scanf("%d",&n)
-#define slf(n)                                      scanf("%lld",&n)
 #define SZ(x)                                    ((vlong)(x).size())
-#define sff(n,m)                                scanf("%d %d",&n,&m)
-#define slff(n,m)                           scanf("%lld %lld",&n,&m)
 #define UB(a,key)     upper_bound(a.begin(),a.end(), key) -a.begin()
 #define Unique(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
 #define valid(i,j)         (i >= 0 && j>= 0 && i < 1001 && j < 1001)
@@ -77,11 +73,11 @@ template < typename T> inline T bigmod (T b, T p, T m) { T res = 1 % m, x = b % 
 
 int main()
 {
+    FasterIO;
     #ifdef caffeines
-    freopen("input.txt","r",stdin);
+    //freopen("input.txt","r",stdin);
     //freopen("output.txt","w",stdout);
     #endif // caffeines
-
 
 
     return 0;
