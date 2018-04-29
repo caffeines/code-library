@@ -1,3 +1,4 @@
+/* Immutable */
 #define N 1000
 int memo[N][N],a[N][N],r,c;
 void precal()
