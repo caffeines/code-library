@@ -1,4 +1,10 @@
 # Ciode-Library
+> Code collection of the different types of data structure,
+ algorithm, and technique that I have written/collected/organized 
+to solve various algorithmic problems
+---
+**Algorithm**
+This folder contains vasious kind of ***Algorithm Implementation*** by using C++.
 
 **Data Structure**
 This folder contains vasious kind of data structure impementation by using C++. I generally use in the programming contests.
