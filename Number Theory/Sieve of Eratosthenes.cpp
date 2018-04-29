@@ -4,7 +4,7 @@ vector <int> Prime;
 void sieve()
 {
     IsPrime[0]=IsPrime[1]=1;
-    for(int i=2;i<N;i+=2)
+    for(int i=4;i<N;i+=2)
         IsPrime[i] = 1;
 
     int SQT = sqrt(N);
