@@ -1,8 +1,7 @@
 /*Add caffeines's template*/
-
 map <char, int> _map;
-int mat[1010][1010];
-ll dist[1010][1010];
+int mat[Size][Size];
+ll dist[Size][Size];
 int sx , sy, k, h, w;
 
 struct Node{
@@ -26,8 +25,8 @@ struct Node{
 priority_queue <Node> pq;
 ll dijkstra(int sx, int sy)
 {
-    for( int i = 0; i < 1010; i++ ) {
-        for( int j = 0; j < 1010; j++ ) {
+    for( int i = 0; i < Size; i++ ) {
+        for( int j = 0; j < Size; j++ ) {
             dist[i][j] = INF;
         }
     }

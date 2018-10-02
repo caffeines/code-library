@@ -55,3 +55,11 @@ void printPath(int en )
     printPath(path[en]) ;
     printf("%d ",en) ;
 }
+
+void Clear(){
+    memset(dist, 0, sizeof(dist));
+    for( int i=0; i < Size; i++ ){
+        graph[i].clear();
+    }
+}
+
