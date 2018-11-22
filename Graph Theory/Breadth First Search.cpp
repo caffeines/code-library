@@ -1,5 +1,5 @@
-vector<int> graph[sz * 10];
-int dist[sz * 10];
+vector<int> graph[sz + 10];
+int dist[sz + 10];
 bool visited[sz + 10];
 
 int bfs(int src, int dest) {
