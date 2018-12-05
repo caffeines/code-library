@@ -32,7 +32,7 @@ void factorize( int n ) {
     factors.clear();
     int sqrtn = sqrt( n );
     for(int i = 0; i < Prime.size() && Prime[i] <= sqrtn; i++){
-        if(IsPrime[n]  == 0 ) break; /*Checks if n is prime or not*/
+        if(n < N && IsPrime[n]  == 0 ) break; /*Checks if n is prime or not*/
         if( n % Prime[i] == 0) {
             while( n % Prime[i] == 0 ) {
                 n /= Prime[i];
